@@ -50,7 +50,7 @@ clear Mbb
 
 %% Calculate spectogram for one electrode 
  
-el_name = 'ROC2';
+el_name = 'ROC8';
 el_nr = find(ismember(all_channels.name,el_name));
 
 [S, f] = ieeg_getWaveletSpectrogram(squeeze(Mdata(el_nr,:,:)), srate, [1 175]);
